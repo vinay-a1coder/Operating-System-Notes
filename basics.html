@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operating System-> Basics</title>
+</head>
+<body>
+    <section>
+        <h1>Introduction of Operating System – Set 1</h1>
+        <p>
+            An operating system acts as an intermediary between the user of a computer and computer hardware. The purpose of an operating system is to provide an environment in which a user can execute programs conveniently and efficiently.<br> 
+           An operating system is a software that manages computer hardware. The hardware must provide appropriate mechanisms to ensure the correct operation of the computer system and to prevent user programs from interfering with the proper operation of the system. 
+        </p>
+        <div><b>Operating System</b> – Definition: </div>
+        <ul>
+            <li>An operating system is a program that controls the execution of application programs and acts as an interface between the user of a computer and the computer hardware.</li>
+            <li>A more common definition is that the operating system is the one program running at all times on the computer (usually called the kernel), with all else being application programs.</li>
+            <li>An operating system is concerned with the allocation of resources and services, such as memory, processors, devices, and information. The operating system correspondingly includes programs to manage these resources, such as a traffic controller, a scheduler, a memory management module, I/O programs, and a file system.</li>
+        </ul>
+        <div><b>Functions of Operating system</b> – Operating system performs three functions: </div>
+        <ol type="1">
+            <li><b>Convenience:</b> An OS makes a computer more convenient to use.</li>
+            <li><b>Efficiency:</b> An OS allows the computer system resources to be used efficiently.
+            </li>
+            <li><b>Ability to Evolve:</b> An OS should be constructed in such a way as to permit the effective development, testing, and introduction of new system functions at the same time without interfering with service.
+            </li>
+            <li><b>Throughput:</b> An OS should be constructed so that It can give maximum <b>throughput</b>(Number of tasks per unit time).
+            </li>
+        </ol>
+        <div><b>Major Functionalities of Operating System: </b></div>
+        <ul>
+            <li><b>Resource Management:</b> When parallel accessing happens in the OS means when multiple users are accessing the system the OS works as Resource Manager, Its responsibility is to provide hardware to the user. It decreases the load in the system.</li>
+            <li><b>Process Management:</b> It includes various tasks like <b>scheduling, termination</b> of the process. OS manages various tasks at a time. Here <b>CPU Scheduling</b> happens means all the tasks would be done by the many algorithms that use for scheduling.
+            </li>
+            <li><b>Storage Management:</b> The <b>file system</b> mechanism used for the management of the storage. <b>NIFS, CFS, CIFS, NFS,</b> etc. are some file systems. All the data stores in various tracks of Hard disks that all managed by the storage manager. It included <b>Hard Disk</b>.
+            </li>
+            <li><b>Memory Management:</b> Refers to the management of primary memory. The operating system has to keep track, how much memory has been used and by whom. It has to decide which process needs memory space and how much. OS also has to allocate and deallocate the memory space.
+            </li>
+            <li><b>Security/Privacy Management:</b> Privacy is also provided by the Operating system by means of passwords so that unauthorized applications can’t access programs or data. For example, Windows uses <b>Kerberos</b> authentication to prevent unauthorized access to data.
+            </li>
+        </ul>
+        <p>The process operating system as User Interface: </p>
+        <ol type="1">
+            <li>User</li>
+            <li>System and application programs</li>
+            <li>Operating system</li>
+            <li>Hardware</li>
+        </ol>
+        <p>Every general-purpose computer consists of the hardware, operating system, system programs, and application programs. The hardware consists of memory, CPU, ALU, and I/O devices, peripheral devices, and storage devices. System program consists of compilers, loaders, editors, OS, etc. The application program consists of business programs, database programs.</p>
+        <img src="basics_1_img.png" width="100%">
+        <p>Every computer must have an operating system to run other programs. The operating system coordinates the use of the hardware among the various system programs and application programs for various users. It simply provides an environment within which other programs can do useful work.<br>
+        The operating system is a set of special programs that run on a computer system thatallows it to work properly. It performs basic tasks such as recognizing input fromthe keyboard, keeping track of files and directories on the disk, sending output tothe display screen, and controlling peripheral devices. 
+        OS is designed to serve two basic purposes: </p>
+        <ol type="1">
+            <li>It controls the allocation and use of the computing System’s resources among the various user and tasks.</li>
+            <li>It provides an interface between the computer hardware and the programmer that simplifies and makes it feasible for coding, creation, debugging of application programs.</li>
+        </ol>
+        <p>The Operating system must support the following tasks. The tasks are:  </p>
+        <ol type="1">
+            <li>Provides the facilities to create, modification of programs and data files using an editor.</li>
+            <li>Access to the compiler for translating the user program from high-level language to machine language.</li>
+            <li>Provide a loader program to move the compiled program code to the computer’s memory for execution.</li>
+            <li>Provide routines that handle the details of I/O programming.</li>
+        </ol>
+        <p><b>I/O System Management –</b> <br>
+            The module that keeps track of the status of devices is called the I/O traffic controller. Each I/O device has a device handler that resides in a separate process associated with that device. <br>
+            The I/O subsystem consists of 
+        </p>
+        <ul>
+            <li>A memory Management component that includes buffering caching and spooling.</li>
+            <li>A general device driver interface.</li>
+        </ul>
+        <p>Drivers for specific hardware devices. </p>
+        <p><b>Assembler –</b><br> 
+            The input to an assembler is an assembly language program. The output is an object program plus information that enables the loader to prepare the object program for execution. At one time, the computer programmer had at his disposal a basic machine that interpreted, through hardware, certain fundamental instructions. He would program this computer by writing a series of ones and Zeros (Machine language), place them into the memory of the machine. 
+        </p>
+        <p><b>Compiler – </b><br>
+            The High-level languages- examples are FORTRAN, COBOL, ALGOL, and PL/I are processed by compilers and interpreters. A compiler is a program that accepts a source program in a “high-level language “and produces a corresponding object program. An interpreter is a program that appears to execute a source program as if it was machine language. The same name (FORTRAN, COBOL, etc.) is often used to designate both a compiler and its associated language.
+        </p>
+        <p><b>Loader –</b><br> 
+            A Loader is a routine that loads an object program and prepares it for execution. There are various loading schemes: absolute, relocating, and direct-linking. In general, the loader must load, relocate and link the object program. The loader is a program that places programs into memory and prepares them for execution. In a simple loading scheme, the assembler outputs the machine language translation of a program on a secondary device and a loader places it in the core. The loader places into memory the machine language version of the user’s program and transfers control to it. Since the loader program is much smaller than the assembler, those make more core available to the user’s program. 
+        </p>
+        <p><b>History of Operating system –</b><br> 
+            The operating system has been evolving through the years. The following table shows the history of OS. 
+        </p>
+        <table>  
+
+
+        </table>
+        <p><b>Types of Operating System – </b></p>
+        <ul>
+            <li>Batch Operating System- Sequence of jobs in a program on a computer without manual interventions.</li>
+            <li>Time-sharing operating System- allows many users to share the computer resources. (Max utilization of the resources).</li>
+            <li>Distributed operating System- Manages a group of different computers and makes appear to be a single computer.</li>
+            <li>Network operating system- computers running in different operating systems can participate in a common network (It is used for security purposes).</li>
+            <li>Real-time operating system – meant applications to fix the deadlines.</li>
+        </ul>
+        <p>Examples of Operating System are – </p>
+        <ul>
+            <li>Windows (GUI based, PC)</li>
+            <li>GNU/Linux (Personal, Workstations, ISP, File and print server, Three-tier client/Server)</li>
+            <li>macOS (Macintosh), used for Apple’s personal computers and workstations (MacBook, iMac).</li>
+            <li>Android (Google’s Operating System for smartphones/tablets/smartwatches)</li>
+            <li>iOS (Apple’s OS for iPhone, iPad, and iPod Touch)</li>
+        </ul>
+    </section><hr>
+    <section>
+        <h1>Types of Operating Systems</h1>
+        <p>An Operating System performs all the basic tasks like managing files, processes, and memory. Thus operating system acts as the manager of all the resources, i.e. resource manager. Thus, the operating system becomes an interface between user and machine.</p>
+        <p><p>Types of Operating Systems:</p> Some widely used operating systems are as follows-</p>
+        <p><b>1. Batch Operating System – </b><br>
+            This type of operating system does not interact with the computer directly. There is an operator which takes similar jobs having the same requirement and group them into batches. It is the responsibility of the operator to sort jobs with similar needs. </p>
+            <img src="basics_2_img.png" width="100%">
+            <p><b>Advantages of Batch Operating System: </b></p>
+            <ul>
+                <li>It is very difficult to guess or know the time required for any job to complete. Processors of the batch systems know how long the job would be when it is in queue</li>
+                <li>Multiple users can share the batch systems</li>
+                <li>The idle time for the batch system is very less</li>
+                <li>It is easy to manage large work repeatedly in batch systems</li>
+            </ul>
+            <p><b>Disadvantages of Batch Operating System:  </b></p>
+            <ul>
+                <li>The computer operators should be well known with batch systems</li>
+                <li>Batch systems are hard to debug</li>
+                <li>It is sometimes costly</li>
+                <li>The other jobs will have to wait for an unknown time if any job fails</li>
+            </ul>
+            <p><b>Examples of Batch based Operating System: </b>Payroll System, Bank Statements, etc.</p>
+    </section>
+</body>
+</html>
